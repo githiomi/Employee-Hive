@@ -13,3 +13,14 @@ body{
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
+
+.btn{
+    position: relative;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
