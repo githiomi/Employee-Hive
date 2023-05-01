@@ -1,4 +1,6 @@
-<div class="employee-item">
+<div
+ [ngClass]="{ isPaid : employee.isPaid }"
+ class="employee-item">
 
     <h3 class="title">
         <div class="identity">
