@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 
 export class HeaderComponent {
 
-  @Input() appTitle:string = 'Task Tracker'
+  @Input() appTitle:string = 'Employee Tracker'
 
 }
