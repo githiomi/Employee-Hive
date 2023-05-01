@@ -9,3 +9,8 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
+}

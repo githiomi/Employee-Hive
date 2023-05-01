@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title: string = 'Notehive';
+  title: string = 'Employee Tracker';
 }
