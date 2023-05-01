@@ -1,11 +1,12 @@
 .employee-item{
+    cursor: pointer;
     margin: 10px;
     background-color: #333;
     padding: 1rem;
     border: none;
     border-radius: 1rem;
     color: white;
-    /* border-left: 1rem solid steelblue; */
+    /* border-left: 1rem solid green; */
 }
 
 .employeeId{

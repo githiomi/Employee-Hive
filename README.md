@@ -50,6 +50,11 @@ It is made entirely using Visual Studio Code in ollaboration with the Angular CL
 * `Typescript` - Angular core language.
 * `Angular` - Client-Side Frontend Framework.
 * `JSON Server` - Dummy backend JSON server.
+* `Font Awesome` - Provides icons
+
+```(nodejs)
+ng add @fortawesome/angular-fontawesome
+```
 
 ## 🪲 Known Bugs
 

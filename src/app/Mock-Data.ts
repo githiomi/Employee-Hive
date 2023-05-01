@@ -45,7 +45,7 @@ export const Employees: Employee[] = [
         employeeName: 'Codeculate Maina',
         employeeAge: 21,
         employeeGender: SEX.FEMALE,
-        employeeEmail: "daniel@gmail.com",
+        employeeEmail: "maina@gmail.com",
         employeePosition: "Chairperson",
         isPaid: true
     }
