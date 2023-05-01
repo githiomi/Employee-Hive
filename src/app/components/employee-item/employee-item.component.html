@@ -1,3 +1,38 @@
 <div class="employee-item">
-    <p>Employee item works!</p>
+
+    <h3>
+        <span class="employeeId" [ngStyle]="{'color': textColor}">{{employee.empId}}.</span>
+        {{employee.employeeName}}
+    </h3>
+
+    <div class="bio">
+
+        <div class="age">
+            <h3>Age:</h3>
+            <p [ngStyle]="{'color': textColor}">{{employee.employeeAge}}</p>
+        </div>
+
+        <div class="gender">
+            <h3>Gender</h3>
+            <p [ngStyle]="{'color': textColor}">{{employee.employeeGender ? 'Female' : 'Male'}}</p>
+        </div>
+
+
+    </div>
+
+    <div class="details">
+
+        <h3>Email:</h3>
+        <a href="mailto:{{employee.employeeEmail}}" [ngStyle]="{'color': textColor}">{{employee.employeeEmail}}</a>
+
+    </div>
+
+    <div class="details">
+
+        <h3>Position:</h3>
+        <p [ngStyle]="{'color': textColor}">{{employee.employeePosition}}</p>
+
+    </div>
+
+
 </div>

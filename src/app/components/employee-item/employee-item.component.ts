@@ -11,6 +11,7 @@ import { Employee } from 'src/app/models/Employee';
 // The component to handle logic for each single employee
 export class EmployeeItemComponent {
 
+  textColor: string = 'steelblue';
   @Input() employee!: Employee;
 
 }
