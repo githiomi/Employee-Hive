@@ -4,5 +4,8 @@
     </h1>
 
     <!-- Loop through each of the employees -->
-    <p *ngFor="let employee of employees">{{ employee.employeeName }}</p>
+    <app-employee-item 
+        *ngFor="let employee of employees" 
+        [employee] = "employee" >
+    </app-employee-item>
 </div>
