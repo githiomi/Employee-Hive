@@ -58,6 +58,11 @@ export class EmployeesComponent implements OnInit {
     // Function to be triggered when the employee item is double clicked
     // Set the isPaid state to the opposite
     employee.isPaid = !employee.isPaid;
+    this.EmployeeService.toggleEmployeeIsPaid(employee).subscribe(
+      () => {
+        console.log("Updated");
+      }
+    )
 
   }
 

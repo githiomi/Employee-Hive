@@ -7,7 +7,7 @@
       "employeeGender": "SEX.MALE",
       "employeeEmail": "dhosio@gmail.com",
       "employeePosition": "Senior Developer",
-      "isPaid": false
+      "isPaid": true
     },
     {
       "id": 3,
@@ -16,7 +16,7 @@
       "employeeGender": "SEX.MALE",
       "employeeEmail": "jere@gmail.com",
       "employeePosition": "Company CEO",
-      "isPaid": true
+      "isPaid": false
     },
     {
       "id": 4,
