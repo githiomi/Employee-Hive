@@ -42,14 +42,12 @@ export class EmployeesComponent implements OnInit {
     // We need to delete the employee from the service holding the employee list
     this.EmployeeService.deleteEmployee(employee).subscribe(
       () => {
-
         // We then need to remove the employee from UI
         this.employees.filter(
           (emp) => {
             return emp.id !== employee.id;
           }
         )
-
       }
     )
 
