@@ -26,7 +26,14 @@ export class EmployeesComponent {
   ngOnInit() : void {
     // We initialize services here
     // Here we can initialize the employee service
-    this.employees = this.EmployeeService.getEmployees();
+    // this.employees = this.EmployeeService.getEmployees();
+
+    // We deal with observables by subscribing to it
+    this.EmployeeService.getEmployees().subscribe(
+      employees => {
+        this.employees = employees;
+      }
+    );
   }
 
 }
