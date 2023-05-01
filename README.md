@@ -1,4 +1,4 @@
-# EMPLOYEEHIVE
+# EMPLOYEE HIVE
 
 > Created by <a href="https://www.github.com/githiomi"> Daniel Githiomi </a>
 

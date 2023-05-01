@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+// Import  the HTTP inbuilt client to make calls
+import { HttpClient, HttpHeaders} from '@angular/common/http';
 // Import the observable to subscribe to
 import { Observable, of } from 'rxjs';
 // The mock employee data

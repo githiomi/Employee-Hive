@@ -11,7 +11,7 @@ import { Employee } from 'src/app/models/Employee';
 })
 
 // This is the main employee component
-export class EmployeesComponent {
+export class EmployeesComponent implements OnInit{
 
   // Variable to hold the list of employees
   employees: Employee[] = [];  // Init it into an empty array
