@@ -1,28 +1,20 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 // Import  the HTTP inbuilt client to make calls
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 // Import the observable to subscribe to
-import { Observable, of } from 'rxjs';
-// The mock employee data
-import { Employees } from '../../Mock-Data';
+import { Observable } from 'rxjs';
 // Import the employee interface
 import { Employee } from '../../models/Employee';
 
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeeService implements OnInit{
+export class EmployeeService{
 
   // Server must be running before this can work
   private employeeUrl:string = 'http://localhost:3000/employees';
 
   constructor(private httpClient:HttpClient) { }
-
-  ngOnInit(): void {
-    
-    // Initialize the http client
-
-  }
 
   // Method that will return the list of employees
   // getEmployees(): Employee[] {
@@ -31,7 +23,7 @@ export class EmployeeService implements OnInit{
 
   // The same method can be done using observables for local data
   // getEmployees() : Observable<Employee[]> {
-  //   // To return the observable direclty
+    // To return the observable direclty
   //   return of(Employees);
     
   // To get the employee data using the http client

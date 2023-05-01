@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Employee } from 'src/app/models/Employee';
 
 // Import font awesome icons
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faColonSign, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-employee-item',
@@ -19,5 +19,10 @@ export class EmployeeItemComponent {
 
   textColor: string = 'steelblue';
   @Input() employee!: Employee;
+
+  deleteEmployee(employee:Employee) {
+    // Method that is called when the user clicks the delete fa-icon
+    console.log(`Deleted employee ${employee.empId}`);
+  }
 
 }
