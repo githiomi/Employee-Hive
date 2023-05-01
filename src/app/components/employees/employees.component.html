@@ -1,1 +1,8 @@
-<p>employees works!</p>
+<div class="employees">
+    <h1>
+        The Employee component is working
+    </h1>
+
+    <!-- Loop through each of the employees -->
+    <p *ngFor="let employee of employees">{{ employee.employeeName }}</p>
+</div>
