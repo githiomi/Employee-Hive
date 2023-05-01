@@ -1,6 +1,24 @@
 {
   "employees": [
     {
+      "id": 1,
+      "employeeName": "Daniel Githiomi",
+      "employeeAge": 21,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "daniel@gmail.com",
+      "employeePosition": "Junior Developer",
+      "isPaid": true
+    },
+    {
+      "id": 2,
+      "employeeName": "Dhosio Hoes",
+      "employeeAge": 18,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "dhosio@gmail.com",
+      "employeePosition": "Senior Developer",
+      "isPaid": false
+    },
+    {
       "id": 3,
       "employeeName": "Jeremiah Sultan",
       "employeeAge": 38,
