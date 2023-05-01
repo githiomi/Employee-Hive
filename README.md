@@ -1,4 +1,4 @@
-# NOTEHIVE
+# EMPLOYEEHIVE
 
 > Created by <a href="https://www.github.com/githiomi"> Daniel Githiomi </a>
 
@@ -6,7 +6,7 @@
 
 This project was created using [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
-`Notehive` is a project developed using Node, Angular, Typescript, HTML5 and CSS. It is an application that allows a user to create a new task and view previously created tasks.
+`Employee Hive` is a project developed using Node, Angular, Typescript, HTML5 and CSS. It is an application that allows a user to keep track of employees in a company and managing their payment tracking.
 
 ## 🏗️ Development server
 
@@ -49,7 +49,12 @@ It is made entirely using Visual Studio Code in ollaboration with the Angular CL
 
 * `Typescript` - Angular core language.
 * `Angular` - Client-Side Frontend Framework.
-* `JSON Server` - Dummy backend JSON server.
+* `JSON Server` - Dummy backend JSON server that allows for all CRUD functions.
+
+```(nodejs)
+npm install npm-server
+```
+
 * `Font Awesome` - Provides icons
 
 ```(nodejs)
@@ -66,11 +71,23 @@ No bugs to report at the moment! the system works efficiently at 100% guaranteed
 
 In order to enjoy the features of this application you will need to:
 
-* Git clone [this](https://github.com/githiomi/Newsic) into your terminal to your
+* Git clone [this](https://github.com/githiomi/Notehive) into your terminal to your
   desired directory.
 * Open the project in an IDE of choice (Eg: Visual Studio Code).
 * Run 'ng serve' to run the application on the development server.
-* Enjoy the `NoteHive` mobile app.
+* Open the package.json and add the following script in the `script` section:
+
+```(json)
+local-server: json-server --watch db.json
+```
+
+* Run the local server using: (Should run on __https://localhost:3000__)
+
+```(nodejs)
+npm run local-server
+```
+
+* Enjoy the `Employee Hive` Angular Application.
 
 ## 📧 Support and contact details
 
