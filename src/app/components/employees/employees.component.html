@@ -8,6 +8,7 @@
     <app-employee-item 
         *ngFor="let employee of employees" 
         [employee] = "employee"
-        (deleteEmployeeEmitter)="deleteEmployee(employee)" >
+        (deleteEmployeeEmitter)="deleteEmployee(employee)"
+        (toggleEmployeePaidEmitter)="toggleEmployeePaid(employee)" >
     </app-employee-item>
 </div>

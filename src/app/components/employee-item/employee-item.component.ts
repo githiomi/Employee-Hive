@@ -23,6 +23,7 @@ export class EmployeeItemComponent {
   // Data binding
   @Input() employee!: Employee;
   @Output() deleteEmployeeEmitter: EventEmitter<Employee> = new EventEmitter();
+  @Output() toggleEmployeePaidEmitter: EventEmitter<Employee> = new EventEmitter();
 
   deleteEmployee(employee:Employee) {
     // Method that is called when the user clicks the delete fa-icon
@@ -30,6 +31,13 @@ export class EmployeeItemComponent {
 
     // When the icon is clicked, emit the employee to the parent 'employees' component
     this.deleteEmployeeEmitter.emit(employee);
+  }
+
+  // To toggle the 'isPaid' state of the employee
+  togglePaid(employee : Employee): void {
+
+    // When the employee-item is clicked, emit the employee to the parent 'employees' component
+    this.toggleEmployeePaidEmitter.emit(employee);
   }
 
 }

@@ -53,4 +53,12 @@ export class EmployeesComponent implements OnInit {
 
   }
 
+  toggleEmployeePaid(employee: Employee){
+
+    // Function to be triggered when the employee item is double clicked
+    // Set the isPaid state to the opposite
+    employee.isPaid = !employee.isPaid;
+
+  }
+
 }
