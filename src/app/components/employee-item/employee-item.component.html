@@ -2,7 +2,7 @@
 
     <h3 class="title">
         <div class="identity">
-            <span class="employeeId" [ngStyle]="{'color': textColor}">{{employee.empId}}.</span>
+            <span class="employeeId" [ngStyle]="{color: textColor}">{{employee.empId}}.</span>
         {{employee.employeeName}}
         </div>
 
@@ -28,14 +28,14 @@
     <div class="details">
 
         <h3>Email:</h3>
-        <a href="mailto:{{employee.employeeEmail}}" [ngStyle]="{'color': textColor}">{{employee.employeeEmail}}</a>
+        <a href="mailto:{{employee.employeeEmail}}" [ngStyle]="{color: textColor}">{{employee.employeeEmail}}</a>
 
     </div>
 
     <div class="details">
 
         <h3>Position:</h3>
-        <p [ngStyle]="{'color': textColor}">{{employee.employeePosition}}</p>
+        <p [ngStyle]="{color: textColor}">{{employee.employeePosition}}</p>
 
     </div>
 
