@@ -14,7 +14,7 @@ export const Employees: Employee[] = [
         isPaid: true
     },
     {
-        empId: 1,
+        empId: 2,
         employeeName: 'Dhosio Hoes',
         employeeAge: 18,
         employeeGender: SEX.MALE,
@@ -23,7 +23,7 @@ export const Employees: Employee[] = [
         isPaid: false
     },
     {
-        empId: 1,
+        empId: 3,
         employeeName: 'Jeremiah Sultan',
         employeeAge: 38,
         employeeGender: SEX.MALE,
@@ -32,7 +32,7 @@ export const Employees: Employee[] = [
         isPaid: true
     },
     {
-        empId: 1,
+        empId: 4,
         employeeName: 'Maureen Esuman',
         employeeAge: 24,
         employeeGender: SEX.FEMALE,
@@ -41,7 +41,7 @@ export const Employees: Employee[] = [
         isPaid: false
     },
     {
-        empId: 1,
+        empId: 5,
         employeeName: 'Codeculate Maina',
         employeeAge: 21,
         employeeGender: SEX.MALE,
