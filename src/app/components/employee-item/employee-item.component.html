@@ -1,8 +1,13 @@
 <div class="employee-item">
 
-    <h3>
-        <span class="employeeId" [ngStyle]="{'color': textColor}">{{employee.empId}}.</span>
+    <h3 class="title">
+        <div class="identity">
+            <span class="employeeId" [ngStyle]="{'color': textColor}">{{employee.empId}}.</span>
         {{employee.employeeName}}
+        </div>
+
+        <!-- Add font awesome icon -->
+        <fa-icon [icon] = "faTimes"></fa-icon>
     </h3>
 
     <div class="bio">
