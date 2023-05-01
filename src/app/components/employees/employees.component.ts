@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-// The mock employee data
-import { Employees } from 'src/app/Mock-Data';
+import { Component, OnInit } from '@angular/core';
+// Import the servie that holds the employee data
+import { EmployeeService } from '../../services/employees/employee.service';
 // The employee interface
 import { Employee } from 'src/app/models/Employee';
 
@@ -14,6 +14,19 @@ import { Employee } from 'src/app/models/Employee';
 export class EmployeesComponent {
 
   // Variable to hold the list of employees
-  employees: Employee[] = Employees;  
+  employees: Employee[] = [];  // Init it into an empty array
+
+  // Constructor
+  // Servies are added as parameters to the constructor
+  constructor(private EmployeeService: EmployeeService) {
+    // This is where we define services
+  }
+
+  // On initialization
+  ngOnInit() : void {
+    // We initialize services here
+    // Here we can initialize the employee service
+    this.employees = this.EmployeeService.getEmployees();
+  }
 
 }
