@@ -4,7 +4,7 @@ import { SEX } from './SEX'
 export interface Employee{
 
     // Employee properties
-    empId? : number,
+    id? : number,
     employeeName: string,
     employeeAge: number,
     employeeGender: SEX,

@@ -11,7 +11,7 @@ import { Employee } from 'src/app/models/Employee';
 })
 
 // This is the main employee component
-export class EmployeesComponent implements OnInit{
+export class EmployeesComponent implements OnInit {
 
   // Variable to hold the list of employees
   employees: Employee[] = [];  // Init it into an empty array
@@ -23,7 +23,7 @@ export class EmployeesComponent implements OnInit{
   }
 
   // On initialization
-  ngOnInit() : void {
+  ngOnInit(): void {
     // We initialize services here
     // Here we can initialize the employee service
     // this.employees = this.EmployeeService.getEmployees();
@@ -34,6 +34,25 @@ export class EmployeesComponent implements OnInit{
         this.employees = employees;
       }
     );
+  }
+
+  // The delete employee function called after the employee has been emitted
+  deleteEmployee(employee: Employee) {
+
+    // We need to delete the employee from the service holding the employee list
+    this.EmployeeService.deleteEmployee(employee).subscribe(
+      () => {
+
+        // We then need to remove the employee from UI
+        this.employees.filter(
+          (emp) => {
+            return emp.id !== employee.id;
+          }
+        )
+
+      }
+    )
+
   }
 
 }

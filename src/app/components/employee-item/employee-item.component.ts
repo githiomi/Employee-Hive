@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 // Impport the employee interface
 import { Employee } from 'src/app/models/Employee';
 
@@ -17,12 +17,19 @@ export class EmployeeItemComponent {
   // Init font awesome icons
   faTimes = faTimes;
 
+  // Local text color
   textColor: string = 'steelblue';
+
+  // Data binding
   @Input() employee!: Employee;
+  @Output() deleteEmployeeEmitter: EventEmitter<Employee> = new EventEmitter();
 
   deleteEmployee(employee:Employee) {
     // Method that is called when the user clicks the delete fa-icon
-    console.log(`Deleted employee ${employee.empId}`);
+    // console.log(`Deleted employee ${employee.empId}`);
+
+    // When the icon is clicked, emit the employee to the parent 'employees' component
+    this.deleteEmployeeEmitter.emit(employee);
   }
 
 }

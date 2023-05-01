@@ -7,6 +7,7 @@
     <!-- Loop through each of the employees -->
     <app-employee-item 
         *ngFor="let employee of employees" 
-        [employee] = "employee" >
+        [employee] = "employee"
+        (deleteEmployeeEmitter)="deleteEmployee(employee)" >
     </app-employee-item>
 </div>

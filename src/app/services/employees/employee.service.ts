@@ -34,4 +34,13 @@ export class EmployeeService{
 
   }
 
+  // To delete an employee from the list
+  deleteEmployee(employee: Employee) : Observable<Employee> {
+
+    // This new url includes the employee id to help with deleting the employee
+    const employeeToDeleteUrl:string = `${this.employeeUrl}/${employee.id}`;
+
+    return this.httpClient.delete<Employee>(employeeToDeleteUrl);
+
+  }
 }
