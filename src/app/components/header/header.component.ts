@@ -12,11 +12,11 @@ import { Subscription } from 'rxjs';
 
 export class HeaderComponent {
 
+  @Input() appTitle:string = 'Employee Tracker';
+
   // Component properties
   showAddEmployeeForm!: boolean;
   subscription!: Subscription;
-
-  @Input() appTitle:string = 'Employee Tracker';
 
   // Constructor to init the service
   constructor(
