@@ -7,36 +7,42 @@
 
         <div class="form-input">
             <label for="employeeName">Employee Name:</label>
-            <input type="text" name="employeeName" id="employeeName" placeholder="Enter Your Name">
+            <input type="text" name="employeeName" id="employeeName" placeholder="Enter Your Name"
+            [(ngModel)] = "employeeName">
         </div>
 
         <div class="bio-input">
 
             <div class="form-input">
                 <label for="employeeAge">Employee Age:</label>
-                <input type="number" name="employeeAge" id="employeeAge" placeholder="Enter Your Age">
+                <input type="number" name="employeeAge" id="employeeAge" placeholder="Enter Your Age"
+                [(ngModel)] = "employeeAge">
             </div>
     
             <div class="form-input">
                 <label for="employeeGender">Employee Gender:</label>
-                <input type="text" name="employeeGender" id="employeeGender" placeholder="Male / Female">
+                <input type="text" name="employeeGender" id="employeeGender" placeholder="Male / Female"
+                [(ngModel)] = "employeeGender">
             </div>
 
         </div>
 
         <div class="form-input">
             <label for="employeeEmail">Employee Email:</label>
-            <input type="text" name="employeeEmail" id="employeeEmail" placeholder="Enter Your @">
+            <input type="email" name="employeeEmail" id="employeeEmail" placeholder="Enter Your @"
+            [(ngModel)] = "employeeEmail">
         </div>
 
         <div class="form-input">
             <label for="employeePosition">Employee Position:</label>
-            <input type="text" name="employeePosition" id="employeePosition" placeholder="Enter Your position">
+            <input type="text" name="employeePosition" id="employeePosition" placeholder="Enter Your position"
+            [(ngModel)] = "employeePosition">
         </div>
 
         <div class="form-input checked">
             <label for="isPaid">Has been paid?</label>
-            <input type="checkbox" name="isPaid" id="isPaid">
+            <input type="checkbox" name="isPaid" id="isPaid"
+            [(ngModel)] = "isPaid">
         </div>
 
         <input type="submit" value="Add Employee">

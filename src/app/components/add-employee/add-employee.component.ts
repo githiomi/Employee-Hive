@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AddEmployeeComponent {
 
+  // Form input variables
+  employeeName!: string;
+  employeeAge!: number;
+  employeeGender!: string;
+  employeeEmail!: string;
+  employeePosition!: string;
+  isPaid: boolean = false;
+
+
+
+
 }
