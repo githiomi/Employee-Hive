@@ -28,10 +28,9 @@ export class EmployeesComponent implements OnInit {
     // Here we can initialize the employee service
     // this.employees = this.EmployeeService.getEmployees();
 
-    // We deal with observables by subscribing to it
     this.employeeService.getEmployees().subscribe(
-      employees => {
-        this.employees = employees;
+      gottenEmployees => {
+        this.employees = gottenEmployees;
       }
     );
   }
@@ -42,13 +41,15 @@ export class EmployeesComponent implements OnInit {
     // We need to delete the employee from the service holding the employee list
     this.employeeService.deleteEmployee(employee).subscribe(
       () => {
-        
+
         // Update user that the employee has been deleted
         alert(`${employee.employeeName} has been deleted from the payroll!`)
 
         // We then need to remove the employee from UI
         this.employees.filter(
-          emp => emp.id !== employee.id
+          emp => {
+            return emp.id !== employee.id
+          }
         )
 
       }
