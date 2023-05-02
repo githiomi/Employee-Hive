@@ -1,6 +1,12 @@
 /* Import Poppins and love ya like a sister */
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;700&display=swap');
 
+/* Variables */
+:root{
+    --main-color: steelblue;
+    /* --main-color: #f18f01; */
+}
+
 /* Global Styles */
 *{
     margin: 0;

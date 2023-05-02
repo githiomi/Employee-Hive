@@ -1,6 +1,15 @@
 {
   "employees": [
     {
+      "id": 1,
+      "employeeName": "Daniel Githiomi",
+      "employeeAge": 21,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "daniel@gmail.com",
+      "employeePosition": "Junior Developer",
+      "isPaid": false
+    },
+    {
       "id": 2,
       "employeeName": "Dhosio Hoes",
       "employeeAge": 18,
@@ -20,12 +29,12 @@
     },
     {
       "id": 4,
-      "employeeName": "Maureen Esuman",
+      "employeeName": "Maureen Tirries",
       "employeeAge": 24,
       "employeeGender": "SEX.FEMALE",
       "employeeEmail": "maureen@gmail.com",
       "employeePosition": "Janitor",
-      "isPaid": false
+      "isPaid": true
     },
     {
       "id": 5,
@@ -34,20 +43,11 @@
       "employeeGender": "SEX.FEMALE",
       "employeeEmail": "maina@gmail.com",
       "employeePosition": "Chairperson",
-      "isPaid": true
+      "isPaid": false
     },
     {
       "id": 6,
-      "employeeName": "Daniel Githiomi",
-      "employeeAge": 21,
-      "employeeGender": "SEX.MALE",
-      "employeeEmail": "daniel@gmail.com",
-      "employeePosition": "Junior Developer",
-      "isPaid": true
-    },
-    {
-      "id": 7,
-      "employeeName": "Dhosio Hoes",
+      "employeeName": "Regina Kagiri",
       "employeeAge": 18,
       "employeeGender": "SEX.MALE",
       "employeeEmail": "dhosio@gmail.com",

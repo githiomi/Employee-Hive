@@ -11,6 +11,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EmployeesComponent } from './components/employees/employees.component';
 import { EmployeeItemComponent } from './components/employee-item/employee-item.component';
+import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EmployeeItemComponent } from './components/employee-item/employee-item.
     ButtonComponent,
     HeaderComponent,
     EmployeesComponent,
-    EmployeeItemComponent
+    EmployeeItemComponent,
+    AddEmployeeComponent
   ],
   imports: [
     BrowserModule,
