@@ -41,19 +41,22 @@ export class EmployeesComponent implements OnInit {
 
     // We need to delete the employee from the service holding the employee list
     this.EmployeeService.deleteEmployee(employee).subscribe(
-      () => {
+      (returnedEmployee) => {
         // We then need to remove the employee from UI
         this.employees.filter(
           (emp) => {
-            return emp.id !== employee.id;
+            return emp.id !== returnedEmployee.id;
           }
         )
+
+        // Update user that the employee has been deleted
+        alert(`${returnedEmployee.employeeName} has been deleted from the payroll!`)
       }
     )
 
   }
 
-  toggleEmployeePaid(employee: Employee){
+  toggleEmployeePaid(employee: Employee) {
 
     // Function to be triggered when the employee item is double clicked
     // Set the isPaid state to the opposite
@@ -67,10 +70,19 @@ export class EmployeesComponent implements OnInit {
   }
 
   // To add a new employee to the list of employees
-  addEmployee(employee: Employee) : void{
+  addEmployee(employee: Employee): void {
 
-    console.log(employee)
+    // Call the addEmployee method from the service
+    this.EmployeeService.addEmployee(employee).subscribe(
+      employee => {
 
+        // Then add the employee to the list of employees
+        this.employees.push(employee);
+
+        // Inform the user of the update
+        alert(`New employee ${employee.employeeName} has been added!`)
+
+      });
 
   }
 

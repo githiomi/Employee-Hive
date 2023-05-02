@@ -42,6 +42,13 @@ export class EmployeeService {
 
   }
 
+  // To add a new employee to the list of employees
+  addEmployee(employee: Employee): Observable<Employee> {
+
+    return this.httpClient.post<Employee>(this.employeeUrl, employee, httpOptions);
+
+  }
+
   // To delete an employee from the list
   deleteEmployee(employee: Employee): Observable<Employee> {
 
