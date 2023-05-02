@@ -5,6 +5,7 @@
 
     <app-button 
     btnColor="{{ showAddEmployeeForm ? 'red' : 'green' }}" 
-    btnText="Add Employee" (addEmployeeBtn) = "toggleAddEmployeeForm()"></app-button>
+    btnText="{{ showAddEmployeeForm ? 'Close Form' : 'Add Employee' }}" 
+    (addEmployeeBtn) = "toggleAddEmployeeForm()"></app-button>
 
 </header>

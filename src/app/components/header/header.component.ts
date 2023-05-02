@@ -21,7 +21,18 @@ export class HeaderComponent {
   // Constructor to init the service
   constructor(
     private uiService:UiService
-  ){}
+  ){
+
+    // Set up a subscription to the service
+    this.subscription = this.uiService.onToggleShowForm().subscribe(
+      // The subscription returns a value (T/F) which is assigned to the show form property
+      value => {
+        this.showAddEmployeeForm = value;
+      }
+
+    )
+
+  }
 
   // Function called when the add employee btn is clicked
   toggleAddEmployeeForm() {
