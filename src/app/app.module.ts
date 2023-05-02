@@ -14,6 +14,7 @@ import { EmployeesComponent } from './components/employees/employees.component';
 import { EmployeeItemComponent } from './components/employee-item/employee-item.component';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './components/pages/about/about.component';
 
 
 // Application Routes
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     EmployeesComponent,
     EmployeeItemComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
