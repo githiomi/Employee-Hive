@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,11 +8,17 @@ import { Component, Input } from '@angular/core';
  
 export class ButtonComponent {
 
+  // Data binding
   @Input() btnColor: string = "";
   @Input() btnText: string = ""
 
-  addTaskBtn() {
+  @Output() addEmployeeBtnEmitter: EventEmitter<any> = new EventEmitter();
+
+  addEmployeeBtn() {
     console.log("Add task button clicked");
+
+    // But we need to emit the new employee to the parent header component
+    this.addEmployeeBtnEmitter.emit();
   }
 
 }
