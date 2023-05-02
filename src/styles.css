@@ -15,9 +15,11 @@
 }
 
 body{
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 .container{

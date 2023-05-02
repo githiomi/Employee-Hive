@@ -8,6 +8,10 @@ This project was created using [Angular CLI](https://github.com/angular/angular-
 
 `Employee Hive` is a project developed using Node, Angular, Typescript, HTML5 and CSS. It is an application that allows a user to keep track of employees in a company and managing their payment tracking.
 
+## 👀 Product Preview
+
+![Screenshot](./src/assets/images/Screenshot.png)
+
 ## 🏗️ Development server
 
 Run `ng serve` for the development server. Navigate to __`http://localhost:4200/`__. The application will automatically reload if you change any of the source files.

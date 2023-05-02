@@ -4,17 +4,20 @@
 
     </app-add-employee>
 
-    <hr>
 
-    <h3>
-        Company Employees:
-    </h3>
-    
-    <!-- Loop through each of the employees -->
-    <app-employee-item 
-        *ngFor="let employee of employees" 
-        [employee] = "employee"
-        (deleteEmployeeEmitter)="deleteEmployee(employee)"
-        (toggleEmployeePaidEmitter)="toggleEmployeePaid(employee)" >
-    </app-employee-item>
+    <div class="current-employees">
+
+        <h3>
+            Current Company Employees:
+        </h3>
+        
+        <!-- Loop through each of the employees -->
+        <app-employee-item 
+            *ngFor="let employee of employees" 
+            [employee] = "employee"
+            (deleteEmployeeEmitter)="deleteEmployee(employee)"
+            (toggleEmployeePaidEmitter)="toggleEmployeePaid(employee)" >
+        </app-employee-item>
+
+    </div>
 </div>
