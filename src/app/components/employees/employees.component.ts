@@ -18,7 +18,7 @@ export class EmployeesComponent implements OnInit {
 
   // Constructor
   // Servies are added as parameters to the constructor
-  constructor(private EmployeeService: EmployeeService) {
+  constructor(private employeeService: EmployeeService) {
     // This is where we define services
   }
 
@@ -29,7 +29,7 @@ export class EmployeesComponent implements OnInit {
     // this.employees = this.EmployeeService.getEmployees();
 
     // We deal with observables by subscribing to it
-    this.EmployeeService.getEmployees().subscribe(
+    this.employeeService.getEmployees().subscribe(
       employees => {
         this.employees = employees;
       }
@@ -40,17 +40,17 @@ export class EmployeesComponent implements OnInit {
   deleteEmployee(employee: Employee) {
 
     // We need to delete the employee from the service holding the employee list
-    this.EmployeeService.deleteEmployee(employee).subscribe(
-      (returnedEmployee) => {
+    this.employeeService.deleteEmployee(employee).subscribe(
+      () => {
+        
+        // Update user that the employee has been deleted
+        alert(`${employee.employeeName} has been deleted from the payroll!`)
+
         // We then need to remove the employee from UI
         this.employees.filter(
-          (emp) => {
-            return emp.id !== returnedEmployee.id;
-          }
+          emp => emp.id !== employee.id
         )
 
-        // Update user that the employee has been deleted
-        alert(`${returnedEmployee.employeeName} has been deleted from the payroll!`)
       }
     )
 
@@ -61,7 +61,7 @@ export class EmployeesComponent implements OnInit {
     // Function to be triggered when the employee item is double clicked
     // Set the isPaid state to the opposite
     employee.isPaid = !employee.isPaid;
-    this.EmployeeService.toggleEmployeeIsPaid(employee).subscribe(
+    this.employeeService.toggleEmployeeIsPaid(employee).subscribe(
       () => {
         console.log("Updated");
       }
@@ -73,7 +73,7 @@ export class EmployeesComponent implements OnInit {
   addEmployee(employee: Employee): void {
 
     // Call the addEmployee method from the service
-    this.EmployeeService.addEmployee(employee).subscribe(
+    this.employeeService.addEmployee(employee).subscribe(
       employee => {
 
         // Then add the employee to the list of employees

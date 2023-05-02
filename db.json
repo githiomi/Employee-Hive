@@ -19,15 +19,6 @@
       "isPaid": false
     },
     {
-      "id": 3,
-      "employeeName": "Jeremiah Sultan",
-      "employeeAge": 38,
-      "employeeGender": "SEX.MALE",
-      "employeeEmail": "jere@gmail.com",
-      "employeePosition": "Company CEO",
-      "isPaid": false
-    },
-    {
       "id": 4,
       "employeeName": "Sheila Esuman",
       "employeeAge": 24,
@@ -35,15 +26,6 @@
       "employeeEmail": "maureen@gmail.com",
       "employeePosition": "Janitor",
       "isPaid": true
-    },
-    {
-      "id": 5,
-      "employeeName": "Dhosio Hoes",
-      "employeeAge": 18,
-      "employeeGender": "SEX.MALE",
-      "employeeEmail": "dhosio@gmail.com",
-      "employeePosition": "Senior Developer",
-      "isPaid": false
     }
   ]
 }

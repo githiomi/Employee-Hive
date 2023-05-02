@@ -24,9 +24,9 @@ export class EmployeeItemComponent {
   @Output() deleteEmployeeEmitter: EventEmitter<Employee> = new EventEmitter();
   @Output() toggleEmployeePaidEmitter: EventEmitter<Employee> = new EventEmitter();
 
-  deleteEmployee(employee:Employee) {
+  onDeleteEmployee(employee:Employee) {
     // Method that is called when the user clicks the delete fa-icon
-    // console.log(`Deleted employee ${employee.empId}`);
+    console.log(`Deleted employee ${employee.id}`);
 
     // When the icon is clicked, emit the employee to the parent 'employees' component
     this.deleteEmployeeEmitter.emit(employee);
