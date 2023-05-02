@@ -66,4 +66,12 @@ export class EmployeesComponent implements OnInit {
 
   }
 
+  // To add a new employee to the list of employees
+  addEmployee(employee: Employee) : void{
+
+    console.log(employee)
+
+
+  }
+
 }
