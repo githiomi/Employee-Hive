@@ -22,6 +22,10 @@ const appRoutes: Routes = [
   {
     path : '', // Index or Main route
     component: EmployeesComponent
+  },
+  {
+    path : '/about',
+    component: AboutComponent
   }
 ]
 
