@@ -26,8 +26,8 @@ export class HeaderComponent {
     // Set up a subscription to the service
     this.subscription = this.uiService.onToggleShowForm().subscribe(
       // The subscription returns a value (T/F) which is assigned to the show form property
-      value => {
-        this.showAddEmployeeForm = value;
+      state => {
+        this.showAddEmployeeForm = state;
       }
 
     )

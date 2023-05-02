@@ -38,9 +38,9 @@ export class AddEmployeeComponent {
     // Here we use the subscription to get the value of the showForm property
     this.subscription = this.uiService.onToggleShowForm().subscribe(
 
-      // Returns a true or false value
-      value => {
-        this.showAddEmployeeForm = value;
+      // Returns a true or false form state
+      state => {
+        this.showAddEmployeeForm = state;
       }
 
     )
