@@ -3,6 +3,8 @@ import { Component, Input } from '@angular/core';
 import { UiService } from 'src/app/services/ui/ui.service';
 // Import subscriotion to consume the service subject
 import { Subscription } from 'rxjs';
+// Import the router to determine the current route
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -20,7 +22,8 @@ export class HeaderComponent {
 
   // Constructor to init the service
   constructor(
-    private uiService:UiService
+    private uiService:UiService,
+    private router:Router
   ){
 
     // Set up a subscription to the service
@@ -39,6 +42,12 @@ export class HeaderComponent {
 
     this.uiService.toggleShowForm();
 
+  }
+
+  toggleRoute(route:string){
+
+    // This will return a TRUE/FALSE value that we can use to determine if the button should be displayed
+    return this.router.url === route;
   }
 
 }

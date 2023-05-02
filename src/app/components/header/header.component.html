@@ -3,7 +3,8 @@
 
     <h1> {{ appTitle.toUpperCase() }}</h1>
 
-    <app-button 
+    <app-button
+    *ngIf="toggleRoute('/')"
     btnColor="{{ showAddEmployeeForm ? 'red' : 'green' }}" 
     btnText="{{ showAddEmployeeForm ? 'Close Form' : 'Add Employee' }}" 
     (addEmployeeBtnEmitter) = "toggleAddEmployeeForm()"></app-button>
