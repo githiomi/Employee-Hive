@@ -13,6 +13,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { EmployeesComponent } from './components/employees/employees.component';
 import { EmployeeItemComponent } from './components/employee-item/employee-item.component';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+// Application Routes
+const appRoutes: Routes = [
+  {
+    path : '', // Index or Main route
+    component: EmployeesComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -26,6 +36,7 @@ import { AddEmployeeComponent } from './components/add-employee/add-employee.com
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     FontAwesomeModule,
     HttpClientModule,
     FormsModule
