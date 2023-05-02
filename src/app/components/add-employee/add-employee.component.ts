@@ -1,6 +1,10 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { Employee } from 'src/app/models/Employee';
 import { SEX } from 'src/app/models/SEX';
+// Import UiService to keep track of the showForm property
+import  { UiService } from '../../services/ui/ui.service';
+// Import Subscription
+import { Subscription } from 'rxjs';
 
 // Const variable to hold the employee sex
 let sex: SEX;
@@ -12,6 +16,10 @@ let sex: SEX;
 })
 export class AddEmployeeComponent {
 
+  // Local variables
+  showAddEmployeeForm !: boolean;
+  subscription !: Subscription;
+
   // Data binding
   @Output() newEmployeeEmitter : EventEmitter<Employee> = new EventEmitter();
 
@@ -22,6 +30,21 @@ export class AddEmployeeComponent {
   employeeEmail!: string;
   employeePosition!: string;
   isPaid: boolean = false;
+
+  // Init the UiService in the constructor
+  constructor(
+    private uiService: UiService
+  ){
+    // Here we use the subscription to get the value of the showForm property
+    this.subscription = this.uiService.onToggleShowForm().subscribe(
+
+      // Returns a true or false value
+      value => {
+        this.showAddEmployeeForm = value;
+      }
+
+    )
+  }
 
 
   // Method called when the form is submitted (ngSubmit)
