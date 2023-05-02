@@ -1,9 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 // Impport the employee interface
 import { Employee } from 'src/app/models/Employee';
-
 // Import font awesome icons
-import { faColonSign, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-employee-item',

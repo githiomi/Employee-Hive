@@ -7,25 +7,43 @@
       "employeeGender": "SEX.MALE",
       "employeeEmail": "daniel@gmail.com",
       "employeePosition": "Junior Developer",
-      "isPaid": false
-    },
-    {
-      "id": 2,
-      "employeeName": "Dhosio Hoes",
-      "employeeAge": 18,
-      "employeeGender": "SEX.MALE",
-      "employeeEmail": "dhosio@gmail.com",
-      "employeePosition": "Senior Developer",
       "isPaid": true
     },
     {
+      "id": 2,
+      "employeeName": "Bridget Jones",
+      "employeeAge": 21,
+      "employeeGender": "SEX.FEMALE",
+      "employeeEmail": "maina@gmail.com",
+      "employeePosition": "Chairperson",
+      "isPaid": false
+    },
+    {
+      "id": 3,
+      "employeeName": "Jeremiah Sultan",
+      "employeeAge": 38,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "jere@gmail.com",
+      "employeePosition": "Company CEO",
+      "isPaid": false
+    },
+    {
       "id": 4,
-      "employeeName": "Maureen Tirries",
+      "employeeName": "Sheila Esuman",
       "employeeAge": 24,
       "employeeGender": "SEX.FEMALE",
       "employeeEmail": "maureen@gmail.com",
       "employeePosition": "Janitor",
       "isPaid": true
+    },
+    {
+      "id": 5,
+      "employeeName": "Dhosio Hoes",
+      "employeeAge": 18,
+      "employeeGender": "SEX.MALE",
+      "employeeEmail": "dhosio@gmail.com",
+      "employeePosition": "Senior Developer",
+      "isPaid": false
     }
   ]
 }
