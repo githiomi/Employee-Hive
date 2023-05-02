@@ -6,9 +6,19 @@
     align-items: center;
 }
 
+img{
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+
 h3 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+p{
+    padding: 1rem 3rem;
+    text-align: center;
 }
