@@ -11,19 +11,30 @@
         <h3>
             Current Company Employees:
         </h3>
-        
+
+        <div class="no-data" 
+        *ngIf="employeeCount === 0">
+            <p>
+                Currently there are no employees registered on the payroll!
+            </p>
+        </div>
+
         <!-- Loop through each of the employees -->
-        <app-employee-item 
-            *ngFor="let employee of employees" 
-            [employee] = "employee"
-            (deleteEmployeeEmitter)="deleteEmployee(employee)"
-            (toggleEmployeePaidEmitter)="toggleEmployeePaid(employee)" >
-        </app-employee-item>
+        <div class="employee">
+
+            <app-employee-item 
+                *ngFor="let employee of employees; let index = index" 
+                [employee]="employee"
+                (deleteEmployeeEmitter)="deleteEmployee(employee)"
+                (toggleEmployeePaidEmitter)="toggleEmployeePaid(employee)">
+            </app-employee-item>
+
+        </div>
 
     </div>
 
     <hr>
-    
+
     <div class="footer">
 
         <p>

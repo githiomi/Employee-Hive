@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../../services/employees/employee.service';
 // The employee interface
 import { Employee } from 'src/app/models/Employee';
+import { faColonSign } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-employees',
@@ -14,6 +15,7 @@ import { Employee } from 'src/app/models/Employee';
 export class EmployeesComponent implements OnInit {
 
   // Variable to hold the list of employees
+  employeeCount!:number;
   employees: Employee[] = [];  // Init it into an empty array
 
   // Constructor
@@ -30,7 +32,9 @@ export class EmployeesComponent implements OnInit {
 
     this.employeeService.getEmployees().subscribe(
       gottenEmployees => {
+        this.employeeCount = gottenEmployees.length;
         this.employees = gottenEmployees;
+        console.log(this.employeeCount);
       }
     );
   }
