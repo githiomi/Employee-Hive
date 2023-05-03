@@ -57,7 +57,7 @@ export class AddEmployeeComponent {
     }
 
     // Check for gender
-    // if (this.employeeGender.trim().toLowerCase() != "male" || this.employeeGender.trim().toLowerCase() != "female") {
+    // if (this.employeeGender.toString().trim().toLowerCase() !== "male" || this.employeeGender.trim().toLowerCase() !== "female") {
     //   console.log(this.employeeGender);
     //   alert("Gender must be male or female");
     //   return;

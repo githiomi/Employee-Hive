@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../../services/employees/employee.service';
 // The employee interface
 import { Employee } from 'src/app/models/Employee';
-import { faColonSign } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-employees',

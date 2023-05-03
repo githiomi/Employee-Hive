@@ -15,7 +15,7 @@ export class ButtonComponent {
   @Output() addEmployeeBtnEmitter: EventEmitter<any> = new EventEmitter();
 
   addEmployeeBtn() {
-    console.log("Add task button clicked");
+    console.log("Add Employee button clicked");
 
     // But we need to emit the new employee to the parent header component
     this.addEmployeeBtnEmitter.emit();
